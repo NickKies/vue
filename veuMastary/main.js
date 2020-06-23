@@ -1,6 +1,7 @@
 var app = new Vue({
     el: '#app',
     data: {
+        color: "red",
         product: 'Socks',
         image: 'Socks.jpg',
         inventory: 8,
@@ -24,6 +25,7 @@ var app = new Vue({
         addToCart: function () {
             this.cart += 1
         },
+
         updateProduct(variantIamge) {
             this.image = variantIamge
         }
